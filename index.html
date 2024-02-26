@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanagiri Automotive</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.137); /* Transparent background */
+        color: rgb(255, 255, 255);
+        padding: 25px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1; /* Place the header above the video */
+      }
+      header h1 {
+        margin: 0;
+        font: 2em magneto;
+      }
+      nav {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 2.5%;
+      }
+      nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      video {
+        width: 100%;
+        z-index: -1;
+      }
+      .content {
+        text-align: center;
+        color: rgb(0, 0, 0);
+      }
+      section {
+        padding: 50px 20px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+      }
+      h4,
+      h5 {
+        text-align: center;
+        font: 2em magneto;
+      }
+      h6 {
+        text-align: center;
+        font: 6em Creattion Demo;
+      }
+      h3 {
+        text-align: center;
+        font: 1em magneto;
+      }
+      p {
+        text-align: justify;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+      }
+      .container:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .content,
+      .image {
+        flex: 1;
+        padding: 20px;
+      }
+      .content h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .content p {
+        font: 1.5em Adobe Thai;
+        line-height: 1.6;
+        padding: 150px;
+      }
+      .image img {
+        max-width: 100%;
+        height: auto;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5%;
+      }
+      .gallery img {
+        width: 45%;
+        height: 45%;
+        margin: 10px;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+      .gallery img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Vanagiri</h1>
+      <nav style="font: 2em Creattion Demo">
+        <a href="#one">Vision</a>
+        <a href="#two">Conceptual's</a>
+        <a href="#three">Model's</a>
+      </nav>
+    </header>
+    <video autoplay muted loop>
+      <source src="S:\VA\trailer\teaser.mp4" type="video/mp4" />
+    </video>
+    <div class="concept" id="one">
+      <h3 style="font: 6em Creattion Demo">Vision</h3>
+
+      <div class="container">
+        <div class="content">
+          <h4>Design</h4>
+          <p>
+            The Vanagiri GT-e Concept features a sleek and aerodynamic design,
+            inspired by the dynamic curves of Indian architecture and the
+            fluidity of different traditional forms. The body will be crafted
+            from lightweight materials, ensuring optimal performance and agility
+            on the track.
+          </p>
+        </div>
+        <div class="image">
+          <img src="S:\VA\pics\Screenshot (752).png" alt="Design Image" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="content">
+          <h4>Performance</h4>
+          <p>
+            Powered by a cutting-edge hybrid powertrain, the Vanagiri GT-e
+            Concept delivers exhilarating performance while maintaining
+            eco-friendliness. The advanced technology ensures seamless power
+            delivery, making every drive a thrilling experience.
+          </p>
+        </div>
+        <div class="image">
+          <img src="S:\VA\pics\Screenshot (754).png" alt="Performance Image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div
+        class="rep"
+        style="
+          background-image: linear-gradient(
+            135deg,
+            #ff6e2b33,
+            #ffffff,
+            #046a392f
+          );
+        "
+      >
+        <div class="content">
+          <h4>Representation</h4>
+          <p>
+            As the first sports car concept representing India on the global
+            stage, the Vanagiri GT-e Concept aims to redefine the perception of
+            Indian automotive engineering. It embodies the spirit of progress
+            and excellence that defines the nation's automotive industry. The
+            Vanagiri GT-E Concept is more than just a sports car; it's a symbol
+            of India's ambition and vision for the future. With its striking
+            design, exceptional performance, and innovative technology, it's set
+            to make a mark on the global sports car market and showcase India's
+            potential on the world stage.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section id="gallery">
+      <h6 id="two">Conceptual's</h6>
+      <div class="gallery">
+        <img src="S:\VA\pics\1.png" alt="Image 1" />
+        <img src="S:\VA\pics\2.png" alt="Image 2" />
+        <img src="S:\VA\pics\3.jpeg" alt="Image 3" />
+        <img src="S:\VA\pics\4.png" alt="Image 4" />
+        <img src="S:\VA\pics\5.jpeg" alt="Image 5" />
+        <img src="S:\VA\pics\6.jpg" alt="Image 6" />
+        <img src="S:\VA\pics\7.jpg" alt="Image 7" />
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h6 id="three">The GT-e Concept</h6>
+      <div class="gallery">
+        <img src="S:\VA\pics\11.png" alt="Image 1" />
+        <img src="S:\VA\pics\17.png" alt="Image 2" />
+        <img src="S:\VA\pics\12.png" alt="Image 3" />
+        <img src="S:\VA\pics\18.png" alt="Image 4" />
+        <img src="S:\VA\pics\13.png" alt="Image 5" />
+        <img src="S:\VA\pics\14.png" alt="Image 6" />
+        <img src="S:\VA\pics\16.png" alt="Image 7" />
+        <img src="S:\VA\pics\15.png" alt="Image 7" />
+      </div>
+    </section>
+  </body>
+</html>
